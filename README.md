@@ -121,7 +121,14 @@ UPDATE 3!
 
 -- SOURCE: CU‐Boulder ECEN5017/USU ECE6930 (Course) - Charge Controller Design and Battery System Simulation (Homework)
 
------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+
+# Permanent Magnet Synchronous Machine Model
+
+- Simulink model for Permanent Magnet Synchronous Motor (PMSM) is constructed with necessary control loop structures to adjust voltage & current values of q-d axis components of the motor within desired interval.
+- Based on mathematical electrical equations of AC PMSM, Simulink blocks are utilized while developing the model. Also, a script file is generated for inserting parameters of PMSM, feedback loop structures and creating bode plots. 
+
+
 
 # Modelling and Control of Power Electronics Systems
 # DC-DC Buck Converter Model
