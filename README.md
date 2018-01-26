@@ -128,6 +128,10 @@ UPDATE 3!
 - Simulink model for Permanent Magnet Synchronous Motor (PMSM) is constructed with necessary control loop structures to adjust voltage & current values of q-d axis components of the motor within desired interval.
 - Based on mathematical electrical equations of AC PMSM, Simulink blocks are utilized while developing the model. Also, a script file is generated for inserting parameters of PMSM, feedback loop structures and creating bode plots. 
 
+UPDATE!
+- Physical blocks (IGBT/Diode, switching wave generator for the inverter, PMSM model in Simscape library) are replaced by Simulink blocks, representing mainly mathematical equations for inverter, PMSM and control structure in the model created previously.
+- Cut-off frequency for the closed-loop system of d-q axis voltage & current to adjust critical parameters in PMSM block is increased from 10Hz to 1kHz to decrease amount of ripple in torque, d-q axis current etc. for PMSM. However, responses to sudden changes in input parameters would be quite quick so this situation may cause undesired issues in real cases such as burning out of motor terminals.
+
 
 
 # Modelling and Control of Power Electronics Systems
