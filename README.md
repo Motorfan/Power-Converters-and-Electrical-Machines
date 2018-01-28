@@ -132,6 +132,10 @@ UPDATE!
 - Physical blocks (IGBT/Diode, switching wave generator for the inverter, PMSM model in Simscape library) are replaced by Simulink blocks, representing mainly mathematical equations for inverter, PMSM and control structure in the model created previously.
 - Cut-off frequency for the closed-loop system of d-q axis voltage & current to adjust critical parameters in PMSM block is increased from 10Hz to 1kHz to decrease amount of ripple in torque, d-q axis current etc. for PMSM. However, responses to sudden changes in input parameters would be quite quick so this situation may cause undesired issues in real cases such as burning out of motor terminals.
 
+UPDATE 2!
+- Variable rotational speed block in addition to the constant speed block is inserted at input to the model created with Simscape blocks via manual switch, providing switch between constant and variable rotational speed for PMSM.
+- This is to observe how output parameters of PMSM (Torque, phase voltages & currents, d-q axis currents etc) respond to sudden changes in the rotational speed value at input side since closed-loop control structure is already created to stabilize those parameters.
+
 
 
 # Modelling and Control of Power Electronics Systems
