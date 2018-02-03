@@ -28,7 +28,7 @@ tauh=40;   %[s]
 tau1=240;  %[s]
 
 R1=5e-3;  %[ohm]
-
+Vcell=3.7;
 %% Electric Motor Parameters
 P=8; %(pole number)
 lambda_m=0.125;
