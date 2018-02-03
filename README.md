@@ -185,5 +185,7 @@ equations of the DC-DC boost converter, already modelled before.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-
-
+# Final Highly Detailed Electric Vehicle Model
+- Simulink model of electric vehicle(EV) including corresponding subsystems, which are created in detailed based on mathematical dynamics equations, is added.  
+- The model contains mechanical driving force subsystems such as force & torque blocks, gear and motion ratio systems; power electronics subsystems such as DC battery, boost converter, AC electrical machine blocks. Closed control loops are also modelled wherever necessary for stabilization of the whole system.
+- While simulation is run, it is observed that voltage and current values corresponding to the subsystems regarding power electronics have relatively high surges as vehicle speed changes suddenly. This situation may cause damage for electrical/electronic components in the vehicle so snubber circuits for power electronics switching devices must be inserted in practical case.  
