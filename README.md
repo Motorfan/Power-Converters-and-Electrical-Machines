@@ -157,6 +157,7 @@ UPDATE 3!
 - Closed loop model is designed for CPM controlled DC-DC buck converter model, created previously.
 - Feedback controller is achieved by voltage loop compensator, for which the required parameters are calculated by expressions given in the updated script file for the closed-loop converter model.
 - Artificial ramp is added for CPM control to avoid undesired oscillations and stabilize the output current and voltage waveforms for the converter. Also, variable output model is inserted to the converter to observe the response of the closed loop system to changes at output.
+- Two models of DC-DC buck converter with CPM, each based on Simulink blocks and SimPowerSystem blocks, are added. 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 # DC-DC Boost Converter Model
