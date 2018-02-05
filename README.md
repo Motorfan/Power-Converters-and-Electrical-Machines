@@ -137,6 +137,13 @@ UPDATE 2!
 - This is to observe how output parameters of PMSM (Torque, phase voltages & currents, d-q axis currents etc) respond to sudden changes in the rotational speed value at input side since closed-loop control structure is already created to stabilize those parameters.
 
 
+# Final Highly Detailed Electric Vehicle Model
+
+- Simulink model of electric vehicle(EV) including corresponding subsystems, which are created in detailed based on mathematical dynamics equations, is added.  
+- The model contains mechanical driving force subsystems such as force & torque blocks, gear and motion ratio systems; power electronics subsystems such as DC battery, boost converter, AC electrical machine blocks. Closed control loops are also modelled wherever necessary for stabilization of the whole system.
+- While simulation is run, it is observed that voltage and current values corresponding to the subsystems regarding power electronics have relatively high surges as vehicle speed changes suddenly. This situation may cause damage for electrical/electronic components in the vehicle so snubber circuits for power electronics switching devices must be inserted in practical case. 
+
+----------------------------------------------------------------------------------------------------------------------------------------
 
 # Modelling and Control of Power Electronics Systems
 # DC-DC Buck Converter Model
@@ -184,9 +191,12 @@ equations of the DC-DC boost converter, already modelled before.
 - This model is thought to be probably the most complicated boost converter model that could be modelled in MATLAB/Simulink.
 
 
+# Computer Server Backplane Power System Model
+
+- Simulink model of a computer server backplane power system, which contains subsystems of AC line voltage connected to full-bridge diode rectifier, boost converter with output bus voltage energy capacitor, DC-DC step-down transformer and buck converter with resistive load at output. Each subsystem is modelled via mainly Simulink blocks, representing mathematical equations for parameters.
+- The model is created based on homework file which is also attached, namely "A Computer Server Backplane Power System Model", provided by Colorado University within the scope of the online graduate level course, namely "Modelling and Control of Power Electronics Converters".
+- Each DC-DC converter is modelled with corresponding voltage and currrent control loops, as well. The parameters and bode plots of each subsystem and control loops are also added as a script file.
+
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-# Final Highly Detailed Electric Vehicle Model
-- Simulink model of electric vehicle(EV) including corresponding subsystems, which are created in detailed based on mathematical dynamics equations, is added.  
-- The model contains mechanical driving force subsystems such as force & torque blocks, gear and motion ratio systems; power electronics subsystems such as DC battery, boost converter, AC electrical machine blocks. Closed control loops are also modelled wherever necessary for stabilization of the whole system.
-- While simulation is run, it is observed that voltage and current values corresponding to the subsystems regarding power electronics have relatively high surges as vehicle speed changes suddenly. This situation may cause damage for electrical/electronic components in the vehicle so snubber circuits for power electronics switching devices must be inserted in practical case.  
+ 
